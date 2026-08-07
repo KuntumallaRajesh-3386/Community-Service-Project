@@ -1,0 +1,305 @@
+/* --- HERO SECTION UPGRADE --- */
+.hero {
+    background: linear-gradient(135deg, #1e6b40 0%, #2E8B57 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid #f1c40f;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 1.3em;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+/* --- COMMON TYPOGRAPHY & HEADERS --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 2.2em;
+    color: #2E8B57;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background: #f1c40f;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.lead-text {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.15em;
+    color: #444;
+}
+
+/* --- OBJECTIVES PILLS --- */
+.pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.pill {
+    background: #e8f5e9;
+    color: #1e6b40;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.05em;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.pill:hover {
+    background: #2E8B57;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(46, 139, 87, 0.3);
+}
+
+/* --- SERIOUS PROBLEM WARNING BOXES --- */
+.serious-problem-container {
+    background: #fffafa;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 8px solid #d32f2f;
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.warning-title {
+    color: #d32f2f;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.warning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.warning-item {
+    background: white;
+    padding: 18px 20px;
+    border-radius: 8px;
+    border: 1px solid #ffcdd2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #333;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(211,47,47,0.05);
+}
+
+.warning-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 10px rgba(211,47,47,0.15);
+    border-color: #ef5350;
+}
+
+.warning-icon {
+    font-size: 1.4em;
+}
+
+
+.section{
+padding:60px 10%;
+background:#fff;
+margin:30px;
+border-radius:10px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+width:280px;
+padding:20px;
+background:#f8f8f8;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#2E8B57;
+color:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.box{
+padding:20px;
+background:#e8f5e9;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+transition:.3s;
+}
+
+.box:hover{
+background:#2E8B57;
+color:white;
+transform:scale(1.05);
+}
+/* --- NEW STYLES FOR ADULTERANTS INTERACTIVITY --- */
+
+.adulterants-container {
+    margin-top: 30px;
+}
+
+.main-btn {
+    background: #2E8B57;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-btn:hover {
+    background: #1e6b40;
+    transform: translateY(-2px);
+}
+
+.adulterants-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.adulterant-btn {
+    padding: 12px 20px;
+    background: #f8f8f8;
+    border: 2px solid #2E8B57;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.adulterant-btn:hover, .adulterant-btn:focus {
+    background: #2E8B57;
+    color: white;
+    outline: none;
+}
+
+.adulterant-details {
+    background: #fff;
+    padding: 25px;
+    border-left: 5px solid #d32f2f;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.adulterant-details h4 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #2E8B57;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.harmful {
+    color: #d32f2f;
+    background: #fde8e8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+/* --- DETAIL IMAGES --- */
+
+.detail-image {
+    max-width: 300px;     /* Keeps the image at a manageable size */
+    height: auto;         /* Maintains original proportions */
+    border-radius: 8px;   /* Smooth rounded corners */
+    margin-bottom: 15px;  
+    display: block;       /* Ensures the image sits on its own line */
+    margin-left: 0;       /* Forces the image to the left side */
+}
+.feedback-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.feedback-form button{
+    background:#2E8B57;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.feedback-form button:hover{
+    background:#1d6b40;
+}
