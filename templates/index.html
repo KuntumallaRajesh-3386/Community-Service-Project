@@ -163,31 +163,31 @@
             title: '🛢 Mineral Oil', 
             desc: 'A cheap, colorless, and odorless byproduct of petroleum distillation. It is commonly mixed with edible oils to artificially increase volume and maximize profit margins.', 
             harm: 'It is not digestible by humans. Regular consumption blocks the absorption of fat-soluble vitamins (A, D, E, K), causes chronic digestive issues, and may introduce carcinogenic impurities into the body.',
-            img: 'images/mineral-oil.jpg'
+            img: '/static/images/mineral-oil.jpg'
         },
         'palm': { 
             title: '🌴 Cheap Palm Oil', 
             desc: 'A low-cost vegetable oil that is often secretly blended in high proportions with expensive premium oils like groundnut, sunflower, or olive oil.', 
             harm: 'Highly refined and oxidized palm oil is loaded with saturated fats. It significantly raises bad cholesterol (LDL) levels, greatly increasing the risk of heart attacks and cardiovascular diseases over time.',
-            img: 'images/cheap-palm-oil.jpg'
+            img: '/static/images/cheap-palm-oil.jpg'
         },
         'colours': { 
             title: '🎨 Artificial Colours', 
             desc: 'Harmful synthetic chemical dyes, such as Metanil Yellow or lead chromate, are added to cheap, pale oils to mimic the rich, bright color of pure mustard or sesame oil.', 
             harm: 'These dyes are highly toxic. They can cause severe liver and kidney damage, nervous system disorders, digestive tract complications, and are known carcinogens (cancer-causing agents).',
-            img: 'images/artificial-colours.jpg'
+            img: '/static/images/artificial-colours.jpg'
         },
         'used': { 
             title: '♻ Used Cooking Oil', 
             desc: 'Oil that has been repeatedly used for deep frying by commercial food vendors is illegally collected, minimally filtered to remove debris, and mixed back into fresh oil supplies.', 
             harm: 'Heating oil repeatedly alters its chemical structure, generating highly toxic compounds like polar materials, free radicals, and trans fats. This is strongly linked to inflammation, Alzheimer’s, liver disease, and cancer.',
-            img: 'images/used-cooking-oil.jpg'
+            img: '/static/images/used-cooking-oil.jpg'
         },
         'industrial': { 
             title: '🧪 Industrial Oils', 
             desc: 'Non-edible toxic oils, such as Argemone oil or Castor oil, are either accidentally or intentionally mixed into cooking oils during the extraction and packaging processes.', 
             harm: 'Argemone oil contamination causes a dangerous condition called Epidemic Dropsy, characterized by severe swelling of limbs, heart failure, respiratory issues, and glaucoma. It can be fatal even in small quantities.',
-            img: 'images/industrial-oil.jpg'
+            img: '/static/images/industrial-oil.jpg'
         }
     };
     const detectionData = {
@@ -196,44 +196,44 @@
             mat: 'Refrigerator, Oil Sample', 
             proc: 'Keep the oil inside a refrigerator for 5-6 hours.', 
             exp: 'Pure oil remains uniform while adulterated oil forms separate layers.',
-            img: 'images/a.jpg' 
+            img: '/static/images/a.jpg' 
         },
         'paper': { 
             title: '📄 Blotting Paper Test', 
             mat: 'White blotting paper', 
             proc: 'Put a few drops of oil on the paper and allow it to dry.', 
             exp: 'Pure oil leaves a light stain while adulterated oil may leave sticky residues.',
-            img: 'images/b.jpg' 
+            img: '/static/images/b.jpg' 
         },
                 'colour': { 
             title: '🎨 Colour Test', 
             mat: 'Transparent Glass', 
             proc: 'Observe the colour under sunlight.', 
             exp: 'Pure oil has a natural colour while adulterated oil appears unusually dark or cloudy.',
-            img: 'images/c.jpg' 
+            img: '/static/images/c.jpg' 
         },
         'iodine': { 
             title: '🧪 Iodine Test', 
             mat: 'Iodine Solution', 
             proc: 'Add a few drops of iodine solution to the oil sample.', 
             exp: 'Colour change may indicate the presence of starch-based adulterants.',
-            img: 'images/e.jpg' 
+            img: '/static/images/e.jpg' 
         }
     };
      const oilsData = {
-        'sunflower': { title: '🌻 Sunflower Oil', desc: 'Rich in Vitamin E and low in saturated fat, making it suitable for daily cooking and frying.', img: 'images/sunflower-oil.jpg' },
-        'groundnut': { title: '🥜 Groundnut Oil', desc: 'Contains healthy monounsaturated fats and has a high smoking point, making it ideal for deep frying.', img: 'images/groundnut-oil.jpg' },
-        'mustard': { title: '🌱 Mustard Oil', desc: 'Traditional cooking oil with antibacterial properties and a sharp flavor. Good for heart health.', img: 'images/mustard-oil.jpg' },
-        'coconut': { title: '🥥 Coconut Oil', desc: 'Widely used in South Indian cooking. Rich in medium-chain triglycerides (MCTs) which provide quick energy.', img: 'images/coconut-oil.jpg' },
-        'sesame': { title: '🌾 Sesame Oil', desc: 'Rich in antioxidants and healthy fatty acids. Excellent for flavor and low-heat cooking.', img: 'images/sesame-oil.jpg' },
-        'palm': { title: '🌴 Palm Oil', desc: 'An economical cooking oil. While pure palm oil has some benefits, it should be consumed in moderation due to high saturated fats.', img: 'images/palm-oil.jpg' },
-        'ricebran': { title: '🌾 Rice Bran Oil', desc: 'Contains oryzanol, which helps maintain healthy cholesterol levels. Great for high-heat cooking.', img: 'images/ricebran-oil.jpg' }
+        'sunflower': { title: '🌻 Sunflower Oil', desc: 'Rich in Vitamin E and low in saturated fat, making it suitable for daily cooking and frying.', img: '/static/images/sunflower-oil.jpg' },
+        'groundnut': { title: '🥜 Groundnut Oil', desc: 'Contains healthy monounsaturated fats and has a high smoking point, making it ideal for deep frying.', img: '/static/images/groundnut-oil.jpg' },
+        'mustard': { title: '🌱 Mustard Oil', desc: 'Traditional cooking oil with antibacterial properties and a sharp flavor. Good for heart health.', img: '/static/images/mustard-oil.jpg' },
+        'coconut': { title: '🥥 Coconut Oil', desc: 'Widely used in South Indian cooking. Rich in medium-chain triglycerides (MCTs) which provide quick energy.', img: '/static/images/coconut-oil.jpg' },
+        'sesame': { title: '🌾 Sesame Oil', desc: 'Rich in antioxidants and healthy fatty acids. Excellent for flavor and low-heat cooking.', img: '/static/images/sesame-oil.jpg' },
+        'palm': { title: '🌴 Palm Oil', desc: 'An economical cooking oil. While pure palm oil has some benefits, it should be consumed in moderation due to high saturated fats.', img: '/static/images/palm-oil.jpg' },
+        'ricebran': { title: '🌾 Rice Bran Oil', desc: 'Contains oryzanol, which helps maintain healthy cholesterol levels. Great for high-heat cooking.', img: '/static/images/ricebran-oil.jpg' }
     };
     const prevData = {
-        'cert': { title: '✔ Buy AGMARK/FSSAI Certified Oils', desc: 'Always check for official certification marks on the packaging to ensure the oil meets strict food safety and quality standards.', img: 'images/certified-oils.jpg' },
-        'date': { title: '📅 Check Manufacturing & Expiry Date', desc: 'Old or expired oils can become rancid and harmful. Always verify the packing and best-before dates before purchasing.', img: 'images/check-dates.jpg' },
-        'loose': { title: '🚫 Avoid Loose Oils', desc: 'Unpackaged or loose oils sold in local markets are highly susceptible to adulteration and contamination.', img: 'images/avoid-loose-oils.jpg' },
-        'store': { title: '🧴 Store Oils Properly in Airtight Containers', desc: 'Keep your cooking oils away from direct sunlight and heat in a sealed container to prevent oxidation and maintain purity.', img: 'images/proper-storage.jpg' }
+        'cert': { title: '✔ Buy AGMARK/FSSAI Certified Oils', desc: 'Always check for official certification marks on the packaging to ensure the oil meets strict food safety and quality standards.', img: '/static/images/certified-oils.jpg' },
+        'date': { title: '📅 Check Manufacturing & Expiry Date', desc: 'Old or expired oils can become rancid and harmful. Always verify the packing and best-before dates before purchasing.', img: '/static/images/check-dates.jpg' },
+        'loose': { title: '🚫 Avoid Loose Oils', desc: 'Unpackaged or loose oils sold in local markets are highly susceptible to adulteration and contamination.', img: '/static/images/avoid-loose-oils.jpg' },
+        'store': { title: '🧴 Store Oils Properly in Airtight Containers', desc: 'Keep your cooking oils away from direct sunlight and heat in a sealed container to prevent oxidation and maintain purity.', img: '/static/images/proper-storage.jpg' }
     };
     // --- TOGGLE LOGIC SETUP ---
     function setupToggle(btnId, listId, detailsId, showText, hideText) {
