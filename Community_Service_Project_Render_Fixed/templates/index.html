@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooking Oils Adulteration Awareness</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Cooking Oil Adulteration Awareness</h1>
+        <p>Creating awareness for a healthier society by educating people about food safety.</p>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="section-header">
+        <h2>About The Issue</h2>
+        <div class="divider"></div>
+    </div>
+    <p class="lead-text">
+        Cooking oil adulteration is the intentional mixing of pure edible oils with
+        cheaper, low-quality, or harmful substances to increase profits. These
+        substances may include mineral oils, reused cooking oils, artificial colours,
+        or low-grade vegetable oils. Such adulteration reduces the nutritional value,
+        quality, and safety of edible oils, making them unsafe for regular consumption.
+    </p>
+</section>
+
+<section id="objectives" class="section">
+    <div class="section-header">
+        <h2>Our Objectives</h2>
+        <div class="divider"></div>
+    </div>
+    
+    <div class="pill-list">
+        <span class="pill">🌟 Create awareness</span>
+        <span class="pill">📚 Educate community</span>
+        <span class="pill">📋 Conduct surveys</span>
+        <span class="pill">🥑 Promote healthy oils</span>
+        <span class="pill">🏥 Improve public health</span>
+    </div>
+
+    <div class="serious-problem-container">
+        <h3 class="warning-title">⚠️ Why is it a Serious Problem?</h3>
+        <div class="warning-list">
+            <div class="warning-item"><span class="warning-icon">📉</span><span>Reduces nutritional quality.</span></div>
+            <div class="warning-item"><span class="warning-icon">🏥</span><span>Causes long-term health complications.</span></div>
+            <div class="warning-item"><span class="warning-icon">☠️</span><span>May contain toxic chemicals.</span></div>
+           
+            <div class="warning-item"><span class="warning-icon">👶</span><span>Unsafe for children and elderly people.</span></div>
+        </div>
+    </div>
+
+    <div class="interactive-container">
+        <button id="toggleAdulterantsBtn" class="main-btn">View Common Adulterants Used</button>
+        
+        <div id="adulterantsList" class="interactive-list hidden">
+            <button class="interactive-btn" onclick="showAdulterantDetails('mineral')">🛢 Mineral Oil</button>
+            <button class="interactive-btn" onclick="showAdulterantDetails('palm')">🌴 Cheap Palm Oil</button>
+            <button class="interactive-btn" onclick="showAdulterantDetails('colours')">🎨 Artificial Colours</button>
+            <button class="interactive-btn" onclick="showAdulterantDetails('used')">♻ Used Cooking Oil</button>
+            <button class="interactive-btn" onclick="showAdulterantDetails('industrial')">🧪 Industrial Oils</button>
+        </div>
+
+        <div id="adulterantDetails" class="interactive-details hidden">
+           
+            <h4 id="adulTitle"></h4>
+             <img id="adulImg" src="" alt="Adulterant Image" style="max-width: 300px; border-radius: 8px; margin-bottom: 15px; display: none;">            <p><strong>Description:</strong> <span id="adulDesc"></span></p>
+            <p class="harmful"><strong>⚠️ Harmful Effects:</strong> <span id="adulHarm"></span></p>
+        </div>
+    </div>
+</section>
+
+
+<section id="detection" class="section">
+    <div class="section-header">
+        <h2>🧪 Detection Methods at Home</h2>
+        <div class="divider"></div>
+        <p class="lead-text">Simple DIY tests to check the purity of your cooking oil.</p>
+    </div>
+    
+    <div class="interactive-container">
+        <button id="toggleDetectionBtn" class="main-btn">View Detection Methods</button>
+        
+        <div id="detectionList" class="interactive-list hidden">
+            <button class="interactive-btn" onclick="showDetectionDetails('fridge')">🧊 Refrigeration Test</button>
+            <button class="interactive-btn" onclick="showDetectionDetails('paper')">📄 Blotting Paper Test</button>
+            
+            <button class="interactive-btn" onclick="showDetectionDetails('colour')">🎨 Colour Test</button>
+            <button class="interactive-btn" onclick="showDetectionDetails('iodine')">🧪 Iodine Test</button>
+        </div>
+
+        <div id="detectionDetails" class="interactive-details hidden">
+         <img id="detImg" class="detail-image" src="" alt="Detection Test Image" style="display: none;">
+            <h4 id="detTitle"></h4>
+            <p><strong>Materials:</strong> <span id="detMat"></span></p>
+            <p><strong>Procedure:</strong> <span id="detProc"></span></p>
+            <p class="highlight"><strong>Expected Result:</strong> <span id="detExp"></span></p>
+        </div>
+    </div>
+</section>
+
+<section id="oils" class="section">
+    <div class="section-header">
+        <h2>🥥 Healthy Cooking Oils</h2>
+        <div class="divider"></div>
+        <p class="lead-text">Choose pure, unrefined oils based on your cooking needs.</p>
+    </div>
+
+    <div class="interactive-container">
+        <button id="toggleOilsBtn" class="main-btn">View Healthy Cooking Oils</button>
+        
+        <div id="oilsList" class="interactive-list hidden">
+            <button class="interactive-btn" onclick="showOilDetails('sunflower')">🌻 Sunflower Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('groundnut')">🥜 Groundnut Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('mustard')">🌱 Mustard Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('coconut')">🥥 Coconut Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('sesame')">🌾 Sesame Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('palm')">🌴 Palm Oil</button>
+            <button class="interactive-btn" onclick="showOilDetails('ricebran')">🌾 Rice Bran Oil</button>
+        </div>
+
+        <div id="oilDetails" class="interactive-details hidden">
+            <h4 id="oilTitle"></h4>
+            <img id="oilImg" class="detail-image" src="" alt="Healthy Oil Image">
+            <p><strong>Benefits:</strong> <span id="oilDesc"></span></p>
+        </div>
+    </div>
+</section>
+
+<section id="prevention" class="section prevention-section">
+    <div class="section-header">
+        <h2>🛡️ Prevention & Safety Tips</h2>
+        <div class="divider"></div>
+    </div>
+    
+    <div class="interactive-container">
+        <button id="togglePrevBtn" class="main-btn">View Prevention Tips</button>
+        
+        <div id="prevList" class="interactive-list hidden">
+            <button class="interactive-btn" onclick="showPrevDetails('cert')">✔ Certified Oils</button>
+            <button class="interactive-btn" onclick="showPrevDetails('date')">📅 Check Dates</button>
+            <button class="interactive-btn" onclick="showPrevDetails('loose')">🚫 Avoid Loose Oils</button>
+            <button class="interactive-btn" onclick="showPrevDetails('store')">🧴 Proper Storage</button>
+        </div>
+            <div id="prevDetails" class="interactive-details hidden">
+               <h4 id="prevTitle"></h4>
+               <!-- Changed id to prevImg and updated the alt text -->
+              <img id="prevImg" class="detail-image" src="" alt="Prevention Tip Image">
+              <p><strong>Guideline:</strong> <span id="prevDesc"></span></p>
+            </div>
+
+           </div>
+</section>
+
+<script>
+    // --- DATA OBJECTS ---
+   const adulterantsData = {
+        'mineral': { 
+            title: '🛢 Mineral Oil', 
+            desc: 'A cheap, colorless, and odorless byproduct of petroleum distillation. It is commonly mixed with edible oils to artificially increase volume and maximize profit margins.', 
+            harm: 'It is not digestible by humans. Regular consumption blocks the absorption of fat-soluble vitamins (A, D, E, K), causes chronic digestive issues, and may introduce carcinogenic impurities into the body.',
+            img: '/static/images/mineral-oil.jpg'
+        },
+        'palm': { 
+            title: '🌴 Cheap Palm Oil', 
+            desc: 'A low-cost vegetable oil that is often secretly blended in high proportions with expensive premium oils like groundnut, sunflower, or olive oil.', 
+            harm: 'Highly refined and oxidized palm oil is loaded with saturated fats. It significantly raises bad cholesterol (LDL) levels, greatly increasing the risk of heart attacks and cardiovascular diseases over time.',
+            img: '/static/images/cheap-palm-oil.jpg'
+        },
+        'colours': { 
+            title: '🎨 Artificial Colours', 
+            desc: 'Harmful synthetic chemical dyes, such as Metanil Yellow or lead chromate, are added to cheap, pale oils to mimic the rich, bright color of pure mustard or sesame oil.', 
+            harm: 'These dyes are highly toxic. They can cause severe liver and kidney damage, nervous system disorders, digestive tract complications, and are known carcinogens (cancer-causing agents).',
+            img: '/static/images/artificial-colours.jpg'
+        },
+        'used': { 
+            title: '♻ Used Cooking Oil', 
+            desc: 'Oil that has been repeatedly used for deep frying by commercial food vendors is illegally collected, minimally filtered to remove debris, and mixed back into fresh oil supplies.', 
+            harm: 'Heating oil repeatedly alters its chemical structure, generating highly toxic compounds like polar materials, free radicals, and trans fats. This is strongly linked to inflammation, Alzheimer’s, liver disease, and cancer.',
+            img: '/static/images/used-cooking-oil.jpg'
+        },
+        'industrial': { 
+            title: '🧪 Industrial Oils', 
+            desc: 'Non-edible toxic oils, such as Argemone oil or Castor oil, are either accidentally or intentionally mixed into cooking oils during the extraction and packaging processes.', 
+            harm: 'Argemone oil contamination causes a dangerous condition called Epidemic Dropsy, characterized by severe swelling of limbs, heart failure, respiratory issues, and glaucoma. It can be fatal even in small quantities.',
+            img: '/static/images/industrial-oil.jpg'
+        }
+    };
+    const detectionData = {
+        'fridge': { 
+            title: '🧊 Refrigeration Test', 
+            mat: 'Refrigerator, Oil Sample', 
+            proc: 'Keep the oil inside a refrigerator for 5-6 hours.', 
+            exp: 'Pure oil remains uniform while adulterated oil forms separate layers.',
+            img: '/static/images/a.jpg' 
+        },
+        'paper': { 
+            title: '📄 Blotting Paper Test', 
+            mat: 'White blotting paper', 
+            proc: 'Put a few drops of oil on the paper and allow it to dry.', 
+            exp: 'Pure oil leaves a light stain while adulterated oil may leave sticky residues.',
+            img: '/static/images/b.jpg' 
+        },
+                'colour': { 
+            title: '🎨 Colour Test', 
+            mat: 'Transparent Glass', 
+            proc: 'Observe the colour under sunlight.', 
+            exp: 'Pure oil has a natural colour while adulterated oil appears unusually dark or cloudy.',
+            img: '/static/images/c.jpg' 
+        },
+        'iodine': { 
+            title: '🧪 Iodine Test', 
+            mat: 'Iodine Solution', 
+            proc: 'Add a few drops of iodine solution to the oil sample.', 
+            exp: 'Colour change may indicate the presence of starch-based adulterants.',
+            img: '/static/images/e.jpg' 
+        }
+    };
+     const oilsData = {
+        'sunflower': { title: '🌻 Sunflower Oil', desc: 'Rich in Vitamin E and low in saturated fat, making it suitable for daily cooking and frying.', img: '/static/images/sunflower-oil.jpg' },
+        'groundnut': { title: '🥜 Groundnut Oil', desc: 'Contains healthy monounsaturated fats and has a high smoking point, making it ideal for deep frying.', img: '/static/images/groundnut-oil.jpg' },
+        'mustard': { title: '🌱 Mustard Oil', desc: 'Traditional cooking oil with antibacterial properties and a sharp flavor. Good for heart health.', img: '/static/images/mustard-oil.jpg' },
+        'coconut': { title: '🥥 Coconut Oil', desc: 'Widely used in South Indian cooking. Rich in medium-chain triglycerides (MCTs) which provide quick energy.', img: '/static/images/coconut-oil.jpg' },
+        'sesame': { title: '🌾 Sesame Oil', desc: 'Rich in antioxidants and healthy fatty acids. Excellent for flavor and low-heat cooking.', img: '/static/images/sesame-oil.jpg' },
+        'palm': { title: '🌴 Palm Oil', desc: 'An economical cooking oil. While pure palm oil has some benefits, it should be consumed in moderation due to high saturated fats.', img: '/static/images/palm-oil.jpg' },
+        'ricebran': { title: '🌾 Rice Bran Oil', desc: 'Contains oryzanol, which helps maintain healthy cholesterol levels. Great for high-heat cooking.', img: '/static/images/ricebran-oil.jpg' }
+    };
+    const prevData = {
+        'cert': { title: '✔ Buy AGMARK/FSSAI Certified Oils', desc: 'Always check for official certification marks on the packaging to ensure the oil meets strict food safety and quality standards.', img: '/static/images/certified-oils.jpg' },
+        'date': { title: '📅 Check Manufacturing & Expiry Date', desc: 'Old or expired oils can become rancid and harmful. Always verify the packing and best-before dates before purchasing.', img: '/static/images/check-dates.jpg' },
+        'loose': { title: '🚫 Avoid Loose Oils', desc: 'Unpackaged or loose oils sold in local markets are highly susceptible to adulteration and contamination.', img: '/static/images/avoid-loose-oils.jpg' },
+        'store': { title: '🧴 Store Oils Properly in Airtight Containers', desc: 'Keep your cooking oils away from direct sunlight and heat in a sealed container to prevent oxidation and maintain purity.', img: '/static/images/proper-storage.jpg' }
+    };
+    // --- TOGGLE LOGIC SETUP ---
+    function setupToggle(btnId, listId, detailsId, showText, hideText) {
+        document.getElementById(btnId).addEventListener('click', function() {
+            const list = document.getElementById(listId);
+            if (list.classList.contains('hidden')) {
+                list.classList.remove('hidden');
+                this.innerText = hideText;
+            } else {
+                list.classList.add('hidden');
+                document.getElementById(detailsId).classList.add('hidden');
+                this.innerText = showText;
+            }
+        });
+    }
+
+    setupToggle('toggleAdulterantsBtn', 'adulterantsList', 'adulterantDetails', 'View Common Adulterants Used', 'Hide Common Adulterants Used');
+    setupToggle('toggleDetectionBtn', 'detectionList', 'detectionDetails', 'View Detection Methods', 'Hide Detection Methods');
+    setupToggle('toggleOilsBtn', 'oilsList', 'oilDetails', 'View Healthy Cooking Oils', 'Hide Healthy Cooking Oils');
+    setupToggle('togglePrevBtn', 'prevList', 'prevDetails', 'View Prevention Tips', 'Hide Prevention Tips');
+
+    // --- DISPLAY DETAILS FUNCTIONS ---
+    function showAdulterantDetails(key) {
+        const data = adulterantsData[key];
+        document.getElementById('adulTitle').innerText = data.title;
+        document.getElementById('adulDesc').innerText = data.desc;
+        document.getElementById('adulHarm').innerText = data.harm;
+        document.getElementById('adulterantDetails').classList.remove('hidden');
+const imgElement = document.getElementById('adulImg');
+    if (data.img) {
+        imgElement.src = data.img;
+        imgElement.style.display = 'block'; // Show the image if it exists
+    } else {
+        imgElement.style.display = 'none'; // Hide it if there is no image
+    }
+    // -----------------------
+
+    document.getElementById('adulterantDetails').classList.remove('hidden');
+
+    }
+
+    function showDetectionDetails(key) {
+        const data = detectionData[key];
+        document.getElementById('detTitle').innerText = data.title;
+        document.getElementById('detMat').innerText = data.mat;
+        document.getElementById('detProc').innerText = data.proc;
+        document.getElementById('detExp').innerText = data.exp;
+        const imgElement = document.getElementById('detImg');
+        if (data.img) {
+            imgElement.src = data.img;
+            imgElement.style.display = 'block';
+        } else {
+            imgElement.style.display = 'none';
+        }document.getElementById('detectionDetails').classList.remove('hidden');
+    }
+
+    function showOilDetails(key) {
+        const data = oilsData[key];
+        document.getElementById('oilTitle').innerText = data.title;
+        document.getElementById('oilDesc').innerText = data.desc;
+        document.getElementById('oilDetails').classList.remove('hidden');
+       const imgElement = document.getElementById('oilImg');
+        if (data.img) {
+            imgElement.src = data.img;
+            imgElement.style.display = 'block';
+        } else {
+            imgElement.style.display = 'none';
+        }
+        // -----------------------
+
+        document.getElementById('oilDetails').classList.remove('hidden');
+    }
+
+    function showPrevDetails(key) {
+        const data = prevData[key];
+        document.getElementById('prevTitle').innerText = data.title;
+        document.getElementById('prevDesc').innerText = data.desc;
+        document.getElementById('prevDetails').classList.remove('hidden');
+        const imgElement = document.getElementById('prevImg');
+        if (data.img) {
+            imgElement.src = data.img;
+            imgElement.style.display = 'block';
+        } else {
+            imgElement.style.display = 'none';
+        }
+        // -----------------------
+
+        document.getElementById('prevDetails').classList.remove('hidden');
+    }
+</script>
+<section class="section">
+    <div class="section-header">
+        <h2>Feedback Form</h2>
+        <div class="divider"></div>
+    </div>
+
+    <form action="/submit" method="POST" class="feedback-form">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <select name="rating" required>
+            <option value="">Rating</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+        </select>
+
+        <textarea
+            name="message"
+            placeholder="Write your feedback"
+            required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+</section>
+</body>
+</html>
